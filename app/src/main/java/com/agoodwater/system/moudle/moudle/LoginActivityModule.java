@@ -1,8 +1,12 @@
 package com.agoodwater.system.moudle.moudle;
 
 import com.agoodwater.system.activity.LoginActivity;
+import com.agoodwater.system.contract.LoginContract;
+import com.agoodwater.system.model.LoginModel;
 import com.agoodwater.system.presenter.LoginPresenter;
 import com.agoodwater.system.view.LoginView;
+
+import javax.inject.Named;
 
 import dagger.Module;
 import dagger.Provides;
@@ -16,16 +20,29 @@ import dagger.Provides;
 public class LoginActivityModule {
 
 
-    private final LoginView mView;
+    private final LoginContract.View mView;
 
-    public LoginActivityModule(LoginView view) {
+    public LoginActivityModule(LoginContract.View view) {
         mView = view;
     }
 
     @Provides
-    LoginView provideLoginView() {
+    LoginContract.View provideLoginContractView() {
         return mView;
     }
+
+    @Provides
+    public LoginContract.Model provideModel(){
+        return new LoginModel();
+    }
+
+    @Named("presenter")
+    @Provides
+    public LoginPresenter providePresenter(LoginContract.Model model){
+        return new LoginPresenter(this.mView , model);
+    }
+
+
 /*
 
     private LoginActivity activity ;
