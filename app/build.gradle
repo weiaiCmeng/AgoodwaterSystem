@@ -41,7 +41,7 @@ android {
     signingConfigs {
         release {
             //注意：该签名文件的路径是以你的moudle文件夹为根路径的，而不是project，不能写错了
-            storeFile file("D://ssh/water_for_system.jks")
+            storeFile file("E://shiqiang/System/app/water_for_system.jks")
             storePassword "sq19911103"
             keyAlias "water_for_systems"
             keyPassword "sq19911103"
