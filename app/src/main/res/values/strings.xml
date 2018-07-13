@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">水站管理端</string>
+
+    <string name="login_password">1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="out_bound_submit1">&#160;&#160;</string>
+
+    <string name="test">电影</string>
+</resources>

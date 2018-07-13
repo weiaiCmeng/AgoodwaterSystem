@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_company_unliquidated"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+
+            android:src="@drawable/company_time"
+            />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/s14c989898"
+            android:text="结算日期"
+            android:gravity="center"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_not_knot"
+            android:layout_marginLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/s14c989898"
+            android:text="2017-8-2 18:05:38"
+            android:gravity="center"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:src="@drawable/company_water_ticket"
+            />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/s14c989898"
+            android:text="结算水票"
+            android:gravity="center"
+
+            />
+
+
+        <TextView
+            android:id="@+id/tv_settlement_ticket"
+            android:layout_marginLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/s14c989898"
+            android:text="元"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/company_money"
+            />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/s14c989898"
+            android:text="结算金额"
+            android:gravity="center"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_not_money"
+            android:layout_marginLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/s18cred"
+            android:text="140.0"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_marginLeft="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/s14c989898"
+            android:text="元"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

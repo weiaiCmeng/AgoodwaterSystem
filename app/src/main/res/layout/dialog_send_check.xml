@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_core"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="请分配送水工"
+        style="@style/s14c5d5d5d" />
+
+    <include layout="@layout/line" />
+
+
+    <ListView
+        android:id="@+id/lv_send"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    </ListView>
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/bt_start_confirm"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="确定"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/order_taking"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/ts14"
+            android:layout_marginRight="30dp"
+            android:layout_height="35dp" />
+
+
+        <Button
+            android:id="@+id/bt_start_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="取消"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            style="@style/s14c5d5d5d"
+            android:background="@drawable/order_cancel"
+            android:layout_height="35dp" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

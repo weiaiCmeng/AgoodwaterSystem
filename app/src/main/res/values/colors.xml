@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+
+    <!--蓝色字体-->
+    <color name="colorBlue">#4399fe</color>
+    <!--正常的数字颜色-->
+    <color name="colorNumber">#989898</color>
+    <!--快捷下单字体-->
+    <color name="colorTextQ">#5d5d5d</color>
+    <!--商品详情字体颜色-->
+    <color name="colorTextS">#2f3537</color>
+    <!--首页背景颜色-->
+    <color name="colorBgd">#ffffff</color>
+    <!--文本显示框的背景色-->
+    <color name="colorBgdW">#f0f2f5</color>
+
+    <color name="colorLine">#C55F5F5F</color>
+
+    <color name="colorMainLine">#8F9A9898</color>
+    <color name="colorf9f9f9">#f9f9f9</color>
+    <!--黄色字体-->
+    <color name="colorYellow">#ffcf4d</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorPress">#e7e7e7</color>
+    <!--红色字体-->
+    <color name="colorblack">#2f3537</color>
+    <color name="colorTime">#6c6c6c</color>
+
+    <!--首页下单时候的字体颜色-->
+    <color name="color5d5d5d">#5d5d5d</color>
+    <!--首页下单时候按键的字体颜色-->
+    <color name="color3dceff">#3dceff</color>
+
+
+    <color name="colorbluef">#00ff00</color>
+    <color name="coloryello">#ff0000</color>
+    <color name="color408080">#408080</color>
+
+
+    <!--标题头的颜色-->
+    <color name="color000000">#000000</color>
+
+    <!--红色的颜色-->
+    <color name="colorRed">#ff5b5b</color>
+
+    <!--顶部栏的颜色-->
+    <color name="titleBackground">#f8f8f8</color>
+    <color name="transparent">#0000</color>
+
+
+
+</resources>

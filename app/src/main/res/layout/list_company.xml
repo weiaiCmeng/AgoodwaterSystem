@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:elevation="5dp"
+    app:cardBackgroundColor="#303069"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardPreventCornerOverlap="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+
+        <RelativeLayout
+
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_company"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/company_user"
+                />
+
+            <TextView
+                android:id="@+id/tv_company_name"
+                android:layout_toRightOf="@+id/iv_company"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/s14c5d5d5d"
+                android:text="北京润源盛业有限公司"
+                android:gravity="center"
+
+                />
+
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017-7-27"
+                style="@style/s14c989898"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentRight="true"
+
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/company_name"
+                />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/s14c989898"
+                android:text="史强"
+                android:gravity="center"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_user_phone"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/s14c989898"
+                android:text="18401770529"
+                android:gravity="center"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/company_address"
+                />
+
+            <TextView
+                android:id="@+id/tv_user_address"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/s14c989898"
+                android:text="北京市回龙观琥珀天地"
+                android:gravity="center"
+
+                />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+
+            android:id="@+id/ll_surplus_ticket"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/company_water"
+                />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/s14c989898"
+                android:text="剩余水票"
+                android:gravity="center"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_surplus"
+                android:layout_marginLeft="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/s14c989898"
+                android:gravity="center"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/company_by_use"
+                />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/s14c989898"
+                android:text="已  使  用"
+                android:gravity="center"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_has_user"
+                android:layout_marginLeft="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/s14c989898"
+                android:text="景甜 X1"
+                android:gravity="center"
+
+                />
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/company_unliquidated"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorWhite"
+            android:layout_height="wrap_content">
+
+
+
+
+
+                <Button
+                    android:id="@+id/bt_settlement_record"
+                    android:layout_toLeftOf="@+id/bt_water_record"
+                    android:layout_margin="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:text="结算记录"
+                    style="@style/s14c5d5d5d"
+                    android:background="@drawable/bt_black_line"
+                    />
+
+                <Button
+                    android:id="@+id/bt_water_record"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:text="送水记录"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    style="@style/s14cblue"
+                    android:background="@drawable/bt_blue_line"
+                    />
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

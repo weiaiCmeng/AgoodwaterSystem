@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:elevation="5dp"
+    app:cardBackgroundColor="#303069"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardPreventCornerOverlap="true">
+
+    <LinearLayout
+
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@style/s14c989898"
+            android:text="姓名"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_order_num"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="货到付款"
+            style="@style/s14c989898"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_bucket_num"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="押金"
+            style="@style/s14c989898"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="押金"
+            android:visibility="gone"
+            style="@style/s14c989898"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/colorBgd"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/il_include"
+        layout="@layout/view_title_outstanding_right" />
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RadioGroup
+            android:id="@+id/rg_group"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@color/colorWhite"
+            android:gravity="center">
+            <RadioButton
+                android:id="@+id/rb_send_water"
+                android:padding="3dp"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:button="@null"
+                android:textSize="@dimen/ts14"
+                android:textColor="@color/button_text_color"
+                android:checked="true"
+                android:text="送水订单" />
+            <TextView
+                android:background="@color/colorTime"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                />
+
+            <RadioButton
+                android:padding="3dp"
+                android:id="@+id/rb_return_bucket"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:drawablePadding="3dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:textSize="@dimen/ts14"
+                android:textColor="@color/button_text_color"
+                android:text="退桶订单" />
+        </RadioGroup>
+        <com.agoodwater.system.view.NoScrollViewPager
+            android:layout_marginTop="1dp"
+            android:id="@+id/vp_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.agoodwater.system.view.NoScrollViewPager>
+</LinearLayout>
+</LinearLayout>

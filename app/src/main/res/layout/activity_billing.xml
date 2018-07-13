@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_title_outstanding_right" />
+
+
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_marginLeft="25dp"
+                android:text="本周收益:"
+                style="@style/s14c5d5d5d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_now_money"
+                android:text="￥"
+                android:layout_marginLeft="10dp"
+                style="@style/s16c5d5d5d"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:background="@color/colorBgdW"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_marginLeft="25dp"
+                android:text="上周收益:"
+                style="@style/s14c5d5d5d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+
+            <TextView
+                android:id="@+id/tv_before_money"
+                style="@style/s16c5d5d5d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="￥" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <include layout="@layout/line"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:padding="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="日期"
+            style="@style/s16c5"
+            />
+
+        <TextView
+            android:padding="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="收益"
+            style="@style/s16c5"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <include layout="@layout/line"/>
+
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/ptr_fresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ptr_resistance="1.7"
+        app:ptr_ratio_of_header_height_to_refresh="1.2"
+        app:ptr_duration_to_close_header="500"
+        app:ptr_keep_header_when_refresh="true"
+        app:ptr_pull_to_fresh="false"
+        >
+
+
+        <com.agoodwater.system.view.MyPullUpListView
+            android:id="@+id/lv_completed"
+            android:scrollbars="none"
+            android:listSelector="#00000000"
+            android:dividerHeight="10dp"
+            android:divider="@drawable/liner"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"></com.agoodwater.system.view.MyPullUpListView>
+
+
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+</LinearLayout>

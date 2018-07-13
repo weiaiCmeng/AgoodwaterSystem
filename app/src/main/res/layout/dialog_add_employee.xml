@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/s14c5d5d5d"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:text="添加您的店铺送水工" />
+
+    <include layout="@layout/line" />
+
+
+    <EditText
+        android:id="@+id/et_user_name"
+        android:layout_marginTop="15dp"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+
+        android:hint="请输入送水工的姓名"
+        style="@style/s14c5d5d5d" />
+
+    <EditText
+        android:id="@+id/tv_user_phone"
+
+
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp"
+        android:inputType="number"
+        android:hint="请输入送水工的手机"
+        style="@style/s14c5d5d5d" />
+
+
+
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:layout_marginTop="1dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/bt_start_confirm"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="确定"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/order_taking"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/ts14"
+            android:layout_marginRight="20dp"
+            android:layout_height="30dp" />
+
+
+        <Button
+            android:id="@+id/bt_start_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="取消"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            style="@style/s14c5d5d5d"
+            android:background="@drawable/order_cancel"
+            android:layout_height="30dp" />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

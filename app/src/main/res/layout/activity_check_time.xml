@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/view_title_outstanding_right"/>
+
+    <TextView
+        android:id="@+id/tv_title_query"
+        style="@style/s14c5d5d5d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="请选择要查询订单的日期" />
+
+    <RelativeLayout
+        android:id="@+id/rl_starttime"
+        style="@style/presscolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@mipmap/calendar_gray" />
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/s14c5d5d5d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv"
+            android:padding="5dp"
+            android:text="开始日期:" />
+
+        <TextView
+            android:id="@+id/tv_starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/tv1"
+            android:padding="5dp"
+            android:text="2016-05-12"
+            android:textColor="@color/colorBlue"
+            android:textSize="@dimen/ts14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@mipmap/list_spread" />
+
+    </RelativeLayout>
+
+
+ <RelativeLayout
+        android:id="@+id/rl_endtime"
+        style="@style/presscolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@mipmap/calendar_gray" />
+
+        <TextView
+            android:id="@+id/tv2"
+            style="@style/s14c5d5d5d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv2"
+            android:padding="5dp"
+            android:text="结束日期:" />
+
+        <TextView
+            android:id="@+id/tv_endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/tv2"
+            android:padding="5dp"
+            android:text="2016-05-12"
+            android:textColor="@color/colorBlue"
+            android:textSize="@dimen/ts14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@mipmap/list_spread" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <Button
+            android:id="@+id/bt_check_time"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bule_button_normal"
+            android:text="确认"
+            android:textSize="@dimen/ts14"
+            android:textColor="@color/colorWhite" />
+
+
+
+        <!-- 日历控件 -->
+
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:id="@+id/ll_calendar"
+            android:layout_width="wrap_content"
+            android:background="@color/colorWhite"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            android:visibility="gone"
+
+
+            >
+
+
+            <RelativeLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tv_dialog_cancel"
+                    style="@style/textclick"
+                    android:textSize="@dimen/ts14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="取消"
+                    android:background="@drawable/button_query_bc"
+                    android:padding="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/colorBlue"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_dialog_confirm"
+                    style="@style/textclick"
+                    android:textSize="@dimen/ts14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="确认"
+                    android:background="@drawable/button_query_bc"
+                    android:padding="10dp"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorBlue"
+                    />
+
+
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBgdW"
+                />
+
+            <com.agoodwater.system.view.MyMaterialCalendarView
+                android:id="@+id/calendarView"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite"
+                app:mcv_selectionColor="@color/colorBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>

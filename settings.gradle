@@ -1,0 +1,1 @@
+include ':app', ':ViewPagerIndicatorlibs', ':xrecyclerview1.2.7'

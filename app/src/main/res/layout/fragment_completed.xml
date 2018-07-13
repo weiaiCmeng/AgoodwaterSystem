@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorBgdW"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/fl_query_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <com.agoodwater.system.view.VpRecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+
+    <include
+
+        android:id="@+id/il_no_order"
+        layout="@layout/no_order_image"/>
+
+
+    </FrameLayout>
+
+</LinearLayout>

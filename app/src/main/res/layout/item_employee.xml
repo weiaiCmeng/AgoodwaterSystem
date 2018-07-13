@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+</LinearLayout>
+
+<!--
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.agoodwater.system.bean.CheckEmployeeBean.DataBean"/>
+
+
+    </data>
+
+<android.support.v7.widget.CardView
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:elevation="5dp"
+    app:cardBackgroundColor="#303069"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardPreventCornerOverlap="true">
+
+    <LinearLayout
+
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@style/s14c989898"
+            android:text="@{item.user_name}"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_order_num"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@{item.danNum}"
+            style="@style/s14c989898"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_bucket_num"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@{item.tongNum}"
+            style="@style/s14c989898"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@{item.deposit}"
+            style="@style/s14c989898"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+</layout>-->

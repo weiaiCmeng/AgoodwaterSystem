@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+
+
+
+
+    <include layout="@layout/view_title_outstanding_right"/>
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/ptr_fresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ptr_resistance="1.7"
+        app:ptr_ratio_of_header_height_to_refresh="1.2"
+        app:ptr_duration_to_close_header="500"
+        app:ptr_keep_header_when_refresh="true"
+        app:ptr_pull_to_fresh="false"
+        >
+        <ListView
+            android:layout_marginTop="1dp"
+            android:id="@+id/lv_outstanding"
+            android:listSelector="#00000000"
+            android:dividerHeight="10dp"
+            android:divider="#00000000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+    <include
+
+        android:id="@+id/il_no_order"
+        layout="@layout/no_order_image"/>
+
+
+</LinearLayout>
+

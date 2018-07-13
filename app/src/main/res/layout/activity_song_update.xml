@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    >
+
+    <include layout="@layout/view_title_outstanding_right" />
+
+
+    <TextView
+        android:id="@+id/tv_song_warn"
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        style="@style/s16c5d5d5d"
+        android:text="注意:只能通过QQ或者浏览器客户端扫码下载,微信暂不支持!"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+
+
+
+
+        <ImageView
+            android:id="@+id/iv_song_update"
+            android:layout_width="300dp"
+            android:src="@mipmap/song_update"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_height="300dp" />
+
+
+
+
+</LinearLayout>
