@@ -52,21 +52,6 @@ public class CompletedPage extends ViewPagerFragment {
     private String[] content = {"全部"};
 //    private String[] content = {"全部", "待支付"};
 
-
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        if (rootView == null) {
-            rootView = inflater.inflate(getLayoutResourceId(), container, false);
-
-        }
-        setEventBus();
-        ButterKnife.bind(this, rootView);
-        return rootView;
-
-
-    }
-
     @Override
     protected int getLayoutResourceId() {
         return R.layout.fragment_completed_order;

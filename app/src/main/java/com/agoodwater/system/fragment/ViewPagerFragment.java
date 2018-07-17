@@ -11,7 +11,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.agoodwater.system.App;
 import com.agoodwater.system.MainActivity;
+import com.agoodwater.system.components.AppComponent;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
@@ -44,9 +46,9 @@ public abstract class ViewPagerFragment extends SupportFragment {
      * onCreateView()里返回的view，修饰为protected,所以子类继承该类时，在onCreateView里必须对该变量进行初始化
      */
     protected View rootView;
-//    private Unbinder binder;
+    private Unbinder binder;
 
-    /*@Nullable
+    @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         if (rootView == null) {
@@ -54,11 +56,19 @@ public abstract class ViewPagerFragment extends SupportFragment {
 
         }
         setEventBus();
+        setDaggerListener(((App)mainActivity.getApplication()).getAppComponent());
         binder = ButterKnife.bind(this, rootView);
+        Bundle bundle = getArguments();//从activity传过来的Bundle
+        if(bundle!=null){
+            getBundle(bundle);
+        }
+
+
+
         return rootView;
 
 
-    }*/
+    }
 
     @Override
     public void setUserVisibleHint(boolean isVisibleToUser) {
@@ -89,6 +99,18 @@ public abstract class ViewPagerFragment extends SupportFragment {
         
     }
 
+
+    /**
+     * 给子类使用Dagger2注入Presenter
+     * @param appComponent
+     */
+    protected void setDaggerListener(AppComponent appComponent) {
+
+    }
+
+    protected void getBundle(Bundle bundle) {
+
+    }
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {

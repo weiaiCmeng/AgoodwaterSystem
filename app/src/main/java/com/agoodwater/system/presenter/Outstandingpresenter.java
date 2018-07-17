@@ -11,6 +11,8 @@ import com.agoodwater.system.view.OutstandingView;
 
 import java.util.Map;
 
+import javax.inject.Inject;
+
 /**
  * Created by shiqiang on 2017/3/22.
  */
@@ -24,11 +26,9 @@ public class Outstandingpresenter implements OutstandingInfo{
     private Map<String, String> loginMap;
     private Map<String, String> confirmMap;
 
+    @Inject
     public Outstandingpresenter(OutstandingView outstandingView) {
-
-
         this.outstandingView = outstandingView ;
-
     }
 
 

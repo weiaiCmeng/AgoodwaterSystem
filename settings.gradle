@@ -1,1 +1,1 @@
-include ':app', ':ViewPagerIndicatorlibs', ':xrecyclerview1.2.7'
+include ':app', ':xrecyclerview1.2.7'

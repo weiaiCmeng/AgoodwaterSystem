@@ -85,23 +85,7 @@ public class StoreManagementPage extends ViewPagerFragment implements StoreView 
     RelativeLayout rlSongUpdate;
     @BindView(R.id.rl_company)
     RelativeLayout rlCompany;
-    Unbinder unbinder;
     private StoreManagerPresenter storemp;
-
-
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        if (rootView == null) {
-            rootView = inflater.inflate(getLayoutResourceId(), container, false);
-
-        }
-        setEventBus();
-        ButterKnife.bind(this, rootView);
-        return rootView;
-
-
-    }
 
     @Override
     protected int getLayoutResourceId() {

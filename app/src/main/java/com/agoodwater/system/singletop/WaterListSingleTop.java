@@ -9,54 +9,28 @@ import java.util.List;
  */
 
 public class WaterListSingleTop {
+    private static volatile WaterListSingleTop instance = null;
+    private List<OutstandingBean.DataBean.DisListBean> orderList;
+    private WaterListSingleTop() {
+    }
+    public static WaterListSingleTop getOrderMapSingleTop() {
 
-    private static volatile WaterListSingleTop instance = null ;
-
-
-    private List<OutstandingBean.DataBean.DisListBean> orderList ;
-    private WaterListSingleTop(){}
-
-
-
-    public static WaterListSingleTop getOrderMapSingleTop(){
-
-
-        if (instance == null){
-
-            synchronized (WaterListSingleTop.class){
-
-                if (instance == null){
-
+        if (instance == null) {
+            synchronized (WaterListSingleTop.class) {
+                if (instance == null) {
                     instance = new WaterListSingleTop();
-
                 }
-
-
             }
-
         }
-
-        return instance ;
-
-
+        return instance;
     }
 
 
-
-    public void setMap(List<OutstandingBean.DataBean.DisListBean> orderList ){
-
-        this.orderList = orderList ;
-
-
+    public void setMap(List<OutstandingBean.DataBean.DisListBean> orderList) {
+        this.orderList = orderList;
     }
 
-    public List<OutstandingBean.DataBean.DisListBean> getMap(){
+    public List<OutstandingBean.DataBean.DisListBean> getMap() {
         return orderList;
-
-
     }
-
-
-
-
 }
